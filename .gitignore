@@ -1,0 +1,40 @@
+# Środowisko wirtualne
+.venv/
+venv/
+env/
+bin/
+lib/
+share/
+Include/
+pyvenv.cfg
+
+# Pliki Pythona (pamięć podręczna)
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Dane i modele (BARDZO WAŻNE)
+# Nie wysyłamy wag modeli, bo są za duże (użytkownik powinien je wytrenować lub pobrać)
+*.pt
+*.pth
+runs/
+datasets/
+Dataset_yolov11/
+
+# Roboflow i klucze API
+# Jeśli pobrałeś dane skryptem, nie wysyłaj folderów z tysiącami zdjęć
+train/
+test/
+valid/
+data.yaml
+README.roboflow.txt
+README.dataset.txt
+
+# Logi i konfiguracja IDE
+.vscode/
+.idea/
+*.log
+
+# Systemowe
+.DS_Store
+Thumbs.db
